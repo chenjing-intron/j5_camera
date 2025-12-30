@@ -1,0 +1,44 @@
+{
+	"mipi": {
+		"base": {
+			"lane": 4,
+			"datatype":"0x1e",
+			"mclk": 24,
+			"mipiclk": 4800,
+			"fps": 30,
+			"width": 640,
+			"height": 2169,
+			"linelenth": 1200,
+			"framelenth": 2200,
+			"settle": 30
+		},
+		"host": {
+			"enable": 1,
+			"hsa": 0,
+			"hbp": 0,
+			"hsd": 0,
+			"vc_num": 2,
+			"vc0_index": 0,
+			"vc1_index": 1
+		},
+		"dev": {
+			"enable": 0,                    
+			"vpg": 0,                      
+			"ipi_lines": 0, 
+			"vc_num": 1,
+			"vc0_index": 0,			
+			"dev_base": {                   
+				"lane": 4,
+				"datatype":"0x1e",
+				"mclk": 24,
+				"mipiclk": 1600,
+				"fps": 30,
+				"width": 1920,
+				"height": 1080,
+				"linelenth": 2750,
+				"framelenth": 1800,
+				"settle": 20
+			}
+		}
+	}
+}

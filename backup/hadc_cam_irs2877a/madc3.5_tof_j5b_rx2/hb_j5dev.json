@@ -1,0 +1,37 @@
+{
+	"config_number":1,
+	"board_name":"xj5dvb",
+	"config_0":{
+		"comment": "cn4 rx2 max96712 x 1, 1 leida",
+		"interface_type": "mipi",
+		"deserial_num":1,
+		"deserial_0":{
+			"deserial_name":"max96712",
+			"deserial_addr":"0x6b",
+			"bus_type":0,
+			"bus_num":1,
+			"power_mode":0
+		},
+		"port_number":1,
+		"port_0":{
+			"dev_port":0,
+			"bus_type":0,
+			"bus_num":1,
+			"entry_num":2,
+			"serial_addr":"0x42",
+			"sensor_addr":"0x3d",
+			"sensor_name":"irs2877a",
+			"reg_width":16,
+			"extra_mode":5,
+			"config_index":0,
+			"sensor_mode":5,
+			"fps":30,
+			"resolution":1080,
+			"deserial_index":0,
+			"deserial_port":0,
+			"data_path":"./cim_config.json",
+			"config_path":"./hb_mipi_leida_30fps_1080P.json"
+		}
+	}
+
+}

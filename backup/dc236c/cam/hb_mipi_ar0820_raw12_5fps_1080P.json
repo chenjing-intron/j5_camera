@@ -1,0 +1,42 @@
+{
+	"mipi": {
+	    "base": {
+	        "lane": 4,
+	        "datatype":"0x2c",
+	        "mclk": 24,
+	        "mipiclk": 3200,
+	        "fps": 5,
+	        "width": 1920,
+	        "height": 1080,
+	        "linelenth": 12000,
+	        "framelenth": 4444,
+	        "settle": 30
+	        },
+	    "host": {
+	        "enable": 1,
+	        "hsa": 0,
+	        "hbp": 0,
+	        "hsd": 0,
+	        "vc_num": 1,
+	        "vc0_index": 0,
+	        "vc1_index": 1,
+	        "vc2_index": 2,
+	        "vc3_index": 3
+	        },
+	    "dev": {
+	        "enable": 0,
+	        "vpg": 0,
+	        "ipi_lines": 0
+	        },
+	    "param": {
+	        "host": {
+	            "name": ["irq_debug", "ipi_16bit", "stop_check_instart"],
+	            "value": [3,           1,           0]
+	            },
+	        "dev": {
+	            "name": ["irq_debug", "nocheck"],
+	            "value": [3,           1]
+	            }
+	        }
+	}
+}

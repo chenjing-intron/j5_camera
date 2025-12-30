@@ -1,0 +1,49 @@
+{
+	"config_number":2,
+	"board_name":"96board",
+	"config_0":{
+		"interface_type": "mipi",
+		"port_number":1,
+			"port_0":{
+			"bus_type":0,
+			"bus_num":0,
+			"isp_addr":"0x1b",
+			"sensor_addr":"0x10",
+			"sensor_name":"ar0230",
+			"config_index":0,
+			"power_mode":1,
+			"reg_width":16,
+			"entry_num":0,
+			"fps":25,
+			"resolution":1080,
+			"extra_mode":1,
+			"power_delay":5,
+			"gpio_pin":[77],
+			"gpio_level":[0],
+			"config_path":"/etc/cam/hb_mipi_xc9080_ar0230_%dfps_%dP.json"
+		}
+	},
+	"config_1":{
+		"interface_type": "mipi",
+		"port_number":1,
+		"port_0":{
+			"bus_type":0,
+			"bus_num":0,
+			"isp_addr":"0x1b",
+			"sensor_addr":"0x10",
+			"sensor1_addr":"0x18",
+			"sensor_name":"onsemi_dual",
+			"config_index":0,
+			"power_mode":1,
+			"reg_width":16,
+			"entry_num":0,
+			"fps":25,
+			"resolution":1080,
+			"power_delay":5,
+			"extra_mode":1,
+			"gpio_pin":[77],
+			"gpio_level":[0],
+			"config_path":"/etc/cam/hb_mipi_xc9080_dual_%dfps_%dP.json"
+		}
+	}
+}

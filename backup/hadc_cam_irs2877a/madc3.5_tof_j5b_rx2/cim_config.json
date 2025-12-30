@@ -1,0 +1,42 @@
+{
+	"pipeline0":{
+		"cim_dma": {
+			"input": {
+				"mipi": {
+					"enable": 1,
+					"width": 640,
+					"height": 1205,
+					"format": 44,
+					"repeat": 1,
+					"vc_index": 0,
+					"rx_index": 2,
+					"raw16_splict": 0,
+					"dbg_clear": 0,
+					"y_uv_swap": 0,
+					"tag_enable": 0,
+					"function": {
+						"enable_frame_id": 1,
+						"enable_DMA": 1,
+						"pack_mode": 0,
+						"enable_bypass": 0,
+						"enable_id_decoder": 0,
+						"set_init_frame_id": 1,
+						"set_bypass_channels": 0
+					}
+				}
+			},
+			"output": {
+				"ddr": {
+					"enable": 1,
+					"format": 44,
+					"width": 640,
+					"height": 1205,
+					"buf_num": 6,
+					"cached": 0,
+					"use_ispbuf": 0,
+					"repeat": 1
+				}
+			}
+		}
+	}
+}
