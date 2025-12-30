@@ -581,6 +581,12 @@ int deserializer_init_setting(sensor_info_t *sensor_info)
 				setting_size = sizeof(max96712_trigger_mfp14) / sizeof(uint16_t) / 2;
 				offset = 0;
 				size = 0;
+			} else if (deserial_if->mfp_index == 9) {
+				trigger_reg = max96712_trigger_mfp9;
+				setting_size = sizeof(max96712_trigger_mfp9) / sizeof(uint16_t) / 2;
+				offset = 0;
+				size = 0;
+				vin_info("---chj---:mfp_index == 9\n");
 			} else {
 				trigger_reg = max96712_trigger_setting_mfp;
 				setting_size = sizeof(max96712_trigger_setting_mfp) / sizeof(uint16_t) / 2 / MAX96712_MFP_LOOP;

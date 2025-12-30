@@ -782,6 +782,18 @@ uint32_t max96712_trigger_mfp7[] = {
 	0x03bb, 0x07,  // linkD,disable GMSL2 rx, id = 7
 };
 
+uint16_t max96712_trigger_mfp9[] = {
+	0x031d, 0xa7,  // pulldown,push-pull,id = 7
+	0x031e, 0x07,  // id = 7
+	0x031c, 0xeb,  // 1M,High prio,Jitter,output 0,GMSL2 tx
+	0x0354, 0xe7,  // linkB,High prio,Jitter,GMSL2 tx,id = 7
+	0x0355, 0x07,  // linkB,disable GMSL2 rx, id = 7
+	0x038a, 0xe7,  // linkC,High prio,Jitter,GMSL2 tx,id = 7
+	0x038b, 0x07,  // linkC,disable GMSL2 rx, id = 7
+	0x03c1, 0xe7,  // linkD,High prio,Jitter,GMSL2 tx,id = 7
+	0x03c2, 0x07,  // linkD,disable GMSL2 rx, id = 7
+};
+
 uint16_t max96712_trigger_mfp14[] = {
 	0x032d, 0xa7,  // pulldown,push-pull,id = 7
 	0x032e, 0x07,  // id = 7
